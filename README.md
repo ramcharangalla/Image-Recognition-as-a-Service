@@ -13,7 +13,7 @@ requests from the request queue (we will describe the various queues next), proc
 request, put the response back in the response queue and also push the results to an S3 bucket
 
 
-##AutoScaling
+## AutoScaling
 
 In our architecture, we have one web-tier and one app-tier always running even though there
 are no messages in the requestQueue. We have implemented the auto-scaler in web-tier in a separate
