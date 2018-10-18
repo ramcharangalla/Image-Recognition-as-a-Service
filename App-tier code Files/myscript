@@ -1,0 +1,20 @@
+#!/bin/bash
+# sqs
+#
+# description: to load dl  model
+
+case $1 in
+    start)
+        /bin/bash /home/ubuntu/start.sh &> /home/ubuntu/error.log
+    ;;
+    stop)
+        /home/ubuntu/sqs-stop.sh
+    ;;
+    restart)
+        /home/ubuntu/sqs-stop.sh
+        /home/ubuntu/sqs-start.sh
+    ;;
+esac
+exit 0
+
+
